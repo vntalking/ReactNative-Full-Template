@@ -1,0 +1,147 @@
+{
+    "quick_access": {
+        "title": "Truy cập nhanh",
+        "data": [
+            {
+                "icon": "person-outline",
+                "name": "Tài khoản",
+                "screen": "profile"
+            },
+            {
+                "icon": "time-outline",
+                "name": "Chấm công",
+                "screen": "personalTimeCheck"
+            },
+            {
+                "icon": "star-half-outline",
+                "name": "Đánh giá",
+                "screen": "emulationList"
+            },
+            {
+                "icon": "ribbon-outline",
+                "name": "Khảo sát",
+                "screen": "surveyList"
+            },
+            {
+                "icon": "calendar-outline",
+                "name": "Công tác",
+                "screen": "businessSchedule"
+            },
+            {
+                "icon": "documents-outline",
+                "name": "Giao ban",
+                "screen": "searchBriefings"
+            }
+        ]
+    },
+    "analysis": {
+        "title": "Thống kê tổng hợp",
+        "data":[]
+    },
+    "MenuUiData": {
+        "title": "Danh mục chức năng",
+        "data":[
+            {
+                "title": "Quản lý chấm công",
+                "data": [
+                    {
+                        "icon": "time-outline",
+                        "name": "Chấm công",
+                        "screen": "personalTimeCheck"
+                    },
+                    {
+                        "icon": "shield-checkmark-outline",
+                        "name": "Lãnh đạo chấm công",
+                        "screen": "departmentchecking"
+                    },
+                    {
+                        "icon": "bar-chart-outline",
+                        "name": "Văn phòng tổng hợp",
+                        "screen": "summarytimekeeping"
+                    }
+                ]
+                
+            },
+            {
+                "title": "Quản lý thi đua",
+                "data": [
+                    {
+                        "icon": "star-outline",
+                        "name": "Tự chấm điểm",
+                        "screen": "emulationList"
+                    },
+                    {
+                        "icon": "checkmark-done-circle-outline",
+                        "name": "Lãnh đạo chấm điểm",
+                        "screen": "departmentApprove"
+                    },
+                    {
+                        "icon": "bar-chart-outline",
+                        "name": "Văn phòng tổng hợp",
+                        "screen": "generalOfficeList"
+                    },
+                    {
+                        "icon": "analytics-outline",
+                        "name": "Tổng hợp điểm thi đua",
+                        "screen": "reportEmulation"
+                    }
+                ]
+                
+            },
+            {
+                "title": "Công tác",
+                "data": [
+                    {
+                        "icon": "calendar-outline",
+                        "name": "Lịch công tác",
+                        "screen": "businessSchedule"
+                    },
+                    {
+                        "icon": "mail-unread-outline",
+                        "name": "Danh sách thư mời",
+                        "screen": "invitationLetter"
+                    }
+                ]
+                
+            },
+            {
+                "title": "Khảo sát",
+                "data": [
+                    {
+                        "icon": "ribbon-outline",
+                        "name": "Danh sách khảo sát",
+                        "screen": "surveyList"
+                    }
+                ]
+                
+            },
+            {
+                "title": "Tra cứu",
+                "data": [
+                    {
+                        "icon": "document-text-outline",
+                        "name": "Kết luận giao ban",
+                        "screen": "searchBriefings"
+                    },
+                    {
+                        "icon": "cash-outline",
+                        "name": "Công khai ngân sách",
+                        "screen": "publicBudgets"
+                    }
+                ]
+                
+            },
+            {
+                "title": "Tài khoản",
+                "data": [
+                    {
+                        "icon": "person-outline",
+                        "name": "Thông tin tài khoản",
+                        "screen": "profile"
+                    }
+                ]
+                
+            }
+        ]
+    }
+}

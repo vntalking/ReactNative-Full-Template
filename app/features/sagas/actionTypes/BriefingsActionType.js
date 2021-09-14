@@ -1,0 +1,1 @@
+export const SEARCH_CONCLUSION = 'app/feature/SEARCH_CONCLUSION';

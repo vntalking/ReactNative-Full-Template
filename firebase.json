@@ -1,0 +1,11 @@
+{
+  "react-native": {
+    "messaging_ios_auto_register_for_remote_messages": true,
+    "messaging_auto_init_enabled": true,
+    "messaging_android_notification_channel_id": "dhnbstc_notification_channel",
+    "crashlytics_debug_enabled": true,
+    "crashlytics_auto_collection_enabled": true,
+    "crashlytics_ndk_enabled": true,
+    "crashlytics_disable_auto_disabler": false
+  }
+}
