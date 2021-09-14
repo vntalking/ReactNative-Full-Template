@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:621939310601:android:6757592c689961e8e178d8",
         "android_client_info": {
-          "package_name": "com.mobile.tnn.sotc"
+          "package_name": "com.mobile.tnn.template"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "621939310601-j92phl77664uiptc15icm64hikcmcbto.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.mobile.tnn.sotc",
+            "package_name": "com.mobile.tnn.template",
             "certificate_hash": "d63770a5357aec7a9bbd4def2bd9cfb27d74563b"
           }
         },

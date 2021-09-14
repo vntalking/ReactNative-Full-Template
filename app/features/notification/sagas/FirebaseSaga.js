@@ -14,7 +14,7 @@ export function* registerID() {
     if (enabled) {
       PushNotification.createChannel(
         {
-          channelId: 'channel-1245555', // (required)
+          channelId: 'channel-1245555-template', // (required)
           channelName: 'My channel', // (required)
           channelDescription: 'A channel to categorise your notifications', // (optional) default: undefined.
           playSound: false, // (optional) default: true
