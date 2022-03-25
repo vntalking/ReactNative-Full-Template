@@ -1,5 +1,5 @@
 import {CommonReducer} from '~/modules/common/store/reducer';
-import {HomeReducer} from '~/modules/home/store/reducer'
+import {HomeReducer} from '~/modules/home/store/Reducer'
 
 /**
  * Khai báo các sub reducer của các module con trong này

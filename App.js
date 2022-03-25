@@ -13,13 +13,9 @@ import {
 } from 'native-base';
 import store from '~/store';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import 'react-native-gesture-handler';
-import HomeScreen from '~/modules/home/views/HomeScreen';
-import AboutScreen from '~/modules/about/AboutScreen';
-import {Provider} from 'react-redux';
+import AppNavigator from '~/navigations/AppNavigator';
 
-const Stack = createStackNavigator();
+import {Provider} from 'react-redux';
 
 LogBox.ignoreAllLogs();
 
@@ -29,16 +25,7 @@ export default function App() {
     <NativeBaseProvider>
       <Provider store={store}>
         <NavigationContainer>
-            <Stack.Navigator>
-              <Stack.Screen
-                name="Home"
-                component={HomeScreen}
-              />
-              <Stack.Screen
-                name="AboutScreen"
-                component={AboutScreen}
-              />
-            </Stack.Navigator>
+            <AppNavigator/>
         </NavigationContainer>
       </Provider>
     </NativeBaseProvider>

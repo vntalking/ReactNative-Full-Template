@@ -1,6 +1,6 @@
 
-import * as ActionTypes from './actionTypes';
-export * from '~/modules/common/store/actions';
+import * as ActionTypes from './ActionTypes';
+export * from '~/modules/common/store/Actions';
 
 
 export const increment = count => ({

@@ -5,9 +5,9 @@ import {
     Button,
     Divider
   } from 'native-base';
-import {increment, commonActions} from '~/modules/home/store/actions';
+import {increment, commonActions} from '~/modules/home/store/Actions';
 import { useDispatch, useSelector } from 'react-redux';
-
+import { ABOUT } from '~/navigations/AppScreens';
 
 const HomeScreen = props => {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const HomeScreen = props => {
           <Divider/>
           <Button onPress={()=> dispatch(commonActions.showLoading())}>Show Loading</Button>
           <Divider/>
-          <Button onPress={()=> props.navigation.navigate('AboutScreen')}>GoTo</Button>
+          <Button onPress={()=> props.navigation.navigate(ABOUT.INDEX)}>GoTo</Button>
       </Box>
   )
 }
