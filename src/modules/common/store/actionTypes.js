@@ -1,1 +1,2 @@
-export const COUNTER_INCREMENT = 'counter_increment';
+// Hiển thị - tắt một loading toàn màn hình.
+export const SHOW_LOADING = 'SHOW_LOADING';

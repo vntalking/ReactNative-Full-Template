@@ -1,13 +1,13 @@
 import * as ActionTypes from './actionTypes';
 
 const initState = {
-    count: 0
+    loading: false
 }
 export function CommonReducer (state = initState, action) {
     switch (action.type){
-        case ActionTypes.COUNTER_INCREMENT:
+        case ActionTypes.SHOW_LOADING:
             return {
-                count: state.count + 1
+                loading: state.count + 1
             };
         default:
             return state;
