@@ -1,1 +1,0 @@
-export const SEARCH_REPORT = 'app/feature/SEARCH_REPORT';
