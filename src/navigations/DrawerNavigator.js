@@ -2,17 +2,16 @@ import React from "react";
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import { ContactStackNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
-import AboutScreen from '~/modules/about/views/AboutScreen';
+import SettingScreen from "~/modules/setting/views/SettingScreen";
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
   return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="Home" component={TabNavigator} />
-      <Drawer.Screen name="About" component={AboutScreen} />
+    <Drawer.Navigator defaultStatus='closed'>
+      <Drawer.Screen name="Menu Home" component={TabNavigator} />
+      <Drawer.Screen name="Menu Setting" component={SettingScreen} />
     </Drawer.Navigator>
   );
 };

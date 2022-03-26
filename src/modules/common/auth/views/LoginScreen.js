@@ -4,12 +4,12 @@ import {
     Box,
   } from 'native-base';
 
-const AboutScreen = props => {
+const LoginScreen = props => {
     return (
         <Box flex={1} bg="#fff" alignItems="center" justifyContent="center">
-            <Text>Second Screen</Text>
+            <Text>Login Screen</Text>
         </Box>
     )
 }
 
-export default AboutScreen;
+export default LoginScreen;

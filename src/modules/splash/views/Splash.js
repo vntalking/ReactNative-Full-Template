@@ -22,13 +22,12 @@ const SplashScreen = props => {
     }, [authLoaded, props.navigation]);
 
     const goToHome = () => {
-        return props.navigation.navigate('DrawerNavigator', { screen: 'Home' })
+        return props.navigation.replace('Main', { screen: 'Home' })
     }
 
     return (
         <View style={styles.root}>
-        <Text>Splash Screen</Text>
-        <Button onPress={goToHome}>GoTo</Button>
+            <Text>Splash Screen</Text>
         </View>
     );
 }

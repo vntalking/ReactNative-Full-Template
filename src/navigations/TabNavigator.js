@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
 
-import { MainStackNavigator, AboutStackNavigator} from "./StackNavigator";
+import { MainStackNavigator, ProfileStackNavigator} from "./StackNavigator";
 
 import { HOME, ABOUT} from './AppScreens';
 
@@ -16,7 +16,7 @@ export default function TabNavigator(props) {
     return (
         <Tab.Navigator>
             <Tab.Screen
-                name={HOME}
+                name="Tab Home"
                 options={{
                     tabBarIcon: ({color, size}) => (
                         <Icon name='home' color={color} size={size} />
@@ -27,7 +27,7 @@ export default function TabNavigator(props) {
                 component={MainStackNavigator}
             />
             <Tab.Screen
-                name="About"
+                name="Tab Profile"
                 options={{
                     tabBarIcon: ({color, size}) => (
                         <Icon name='rocket' color={color} size={size} />
@@ -36,7 +36,7 @@ export default function TabNavigator(props) {
                     header: () => null,
                     animationEnabled: false
                 }}
-                component={AboutStackNavigator}
+                component={ProfileStackNavigator}
             />
         </Tab.Navigator>
     )

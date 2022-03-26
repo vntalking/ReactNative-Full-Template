@@ -8,7 +8,15 @@ const APP_NAME = {
     ABOUT: { // Danh sách các màn hình trong module About.
         INDEX: 'About.Index',
         DETAIL: 'About.Detail'
-    }
+    },
+    MESSAGE: {
+        INBOX: 'Message.Inbox',
+        DETAIL: 'Message.Detail'
+    },
+    HELP: "Help",
+    LOGIN: 'Login',
+    SIGNUP: 'SignUp',
+    SPLASH: 'Splash'
 
 }
 

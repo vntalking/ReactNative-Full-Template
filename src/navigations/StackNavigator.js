@@ -1,10 +1,19 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-
-import Home from "~/modules/home/views/HomeScreen";
-import About from "~/modules/about/views/AboutScreen";
-
 const Stack = createStackNavigator();
+
+/******* PUBLIC MODULE *******/
+import SplashScreen from '~/modules/splash/views/Splash';
+import HelpScreen from "~/modules/help/views/HelpScreen";
+import * as AuthModule from '~/modules/common/auth/Navigations';
+
+
+/******* MAIN MODULE *******/
+import * as HomeModule from '~/modules/home/Navigations';
+import * as MessageModule from '~/modules/Message/Navigations';
+
+/******* PROFILE MODULE *******/
+import * as ProfileModule from '~/modules/profile/Navigations';
 
 const screenOptionStyle = {
   headerStyle: {
@@ -19,18 +28,36 @@ const screenOptionStyle = {
 const MainStackNavigator = () => {
     return (
       <Stack.Navigator screenOptions={screenOptionStyle}>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="About" component={About} />
+        {HomeModule.navigation(Stack)}
+        {MessageModule.navigation(Stack)}
       </Stack.Navigator>
     );
 }
 
-const AboutStackNavigator = () => {
+const ProfileStackNavigator = () => {
     return (
       <Stack.Navigator screenOptions={screenOptionStyle}>
-        <Stack.Screen name="About" component={About} />
+        {ProfileModule.navigation(Stack)}
       </Stack.Navigator>
     );
 }
 
-export { MainStackNavigator, AboutStackNavigator };
+const AuthStackNavigator = () => {
+    return (
+        <Stack.Navigator screenOptions={screenOptionStyle}>
+            <Stack.Screen name="Splash" component={SplashScreen}/>
+            {AuthModule.navigation(Stack)}
+        </Stack.Navigator>
+    );
+}
+
+const PublicStackNavigator  = () => {
+    return (
+        <Stack.Navigator screenOptions={screenOptionStyle}>
+            <Stack.Screen name="Splash" component={SplashScreen}/>
+            <Stack.Screen name="Help" component={HelpScreen}/>
+        </Stack.Navigator>
+    )
+}
+
+export { MainStackNavigator, ProfileStackNavigator, AuthStackNavigator, PublicStackNavigator };

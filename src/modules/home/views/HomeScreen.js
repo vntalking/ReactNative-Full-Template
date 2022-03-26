@@ -7,7 +7,7 @@ import {
   } from 'native-base';
 import {increment, commonActions} from '~/modules/home/store/Actions';
 import { useDispatch, useSelector } from 'react-redux';
-import { ABOUT } from '~/navigations/AppScreens';
+import { MESSAGE, HELP, LOGIN } from '~/navigations/AppScreens';
 
 const HomeScreen = props => {
   const dispatch = useDispatch();
@@ -20,7 +20,11 @@ const HomeScreen = props => {
           <Divider/>
           <Button onPress={()=> dispatch(commonActions.showLoading())}>Show Loading</Button>
           <Divider/>
-          <Button onPress={()=> props.navigation.navigate(ABOUT.INDEX)}>GoTo</Button>
+          <Button onPress={()=> props.navigation.navigate(MESSAGE.INBOX)}>GoTo Message</Button>
+          <Divider/>
+          <Button onPress={()=> props.navigation.navigate('Public', { screen: HELP.INDEX })}>GoTo Help</Button>
+          <Divider/>
+          <Button onPress={()=> props.navigation.navigate('Auth', { screen: LOGIN })}>Login</Button>
       </Box>
   )
 }
