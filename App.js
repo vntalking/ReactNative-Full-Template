@@ -7,27 +7,22 @@
  */
 
 import React from 'react';
-import {LogBox} from 'react-native';
-import {
-  NativeBaseProvider
-} from 'native-base';
+import { LogBox } from 'react-native';
+import { NativeBaseProvider } from 'native-base';
 import store from '~/store';
-import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from '~/navigations/AppNavigator';
-
-import {Provider} from 'react-redux';
+import 'react-native-gesture-handler';
+import { Provider } from 'react-redux';
 
 LogBox.ignoreAllLogs();
 
 export default function App() {
-  // 2. Use at the root of your app
-  return (
-    <NativeBaseProvider>
-      <Provider store={store}>
-        <NavigationContainer>
-            <AppNavigator/>
-        </NavigationContainer>
-      </Provider>
-    </NativeBaseProvider>
-  );
+    // 2. Use at the root of your app
+    return (
+        <NativeBaseProvider>
+            <Provider store={store}>
+                <AppNavigator />
+            </Provider>
+        </NativeBaseProvider>
+    );
 }
