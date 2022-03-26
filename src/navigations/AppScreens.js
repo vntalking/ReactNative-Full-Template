@@ -4,20 +4,31 @@
  ****************************************************************************/
 
 const APP_NAME = {
-    HOME: 'Home',
-    ABOUT: { // Danh sách các màn hình trong module About.
-        INDEX: 'About.Index',
-        DETAIL: 'About.Detail'
+    AUTH_GROUP: {
+        NAME: 'Auth',
+        SCREENS: {
+            LOGIN: 'Login',
+            SIGNUP: 'SignUp',
+        }
     },
-    MESSAGE: {
-        INBOX: 'Message.Inbox',
-        DETAIL: 'Message.Detail'
+    PUBLIC_GROUP:{
+        NAME: 'PUBLIC',
+        SCREENS: {
+            HELP: "Help",
+            SPLASH: 'Splash'
+        }
     },
-    HELP: "Help",
-    LOGIN: 'Login',
-    SIGNUP: 'SignUp',
-    SPLASH: 'Splash'
-
+    MAIN_GROUP: {
+        NAME: 'Main',
+        SCREENS: {
+            HOME: 'Home',
+            PROFILE: "Profile",
+            MESSAGE: { // Danh sách các màn hình trong module Message.
+                INBOX: 'Message.Inbox',
+                DETAIL: 'Message.Detail'
+            },
+        }
+    },
 }
 
 module.exports = APP_NAME;

@@ -31,24 +31,24 @@ import DrawerNavigator from './DrawerNavigator';
  * Public Navigator
  */
 import { AuthStackNavigator, PublicStackNavigator} from "./StackNavigator";
-
+import {PUBLIC_GROUP, AUTH_GROUP, MAIN_GROUP} from '~/navigations/AppScreens'
 
 export default function AppNavigator() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Splash">
                 <Stack.Screen
-                    name="Public"
+                    name={PUBLIC_GROUP.NAME}
                     options={{animationEnabled: false, header: () => null}}
                     component={PublicStackNavigator}
                 />
                 <Stack.Screen
-                    name="Auth"
+                    name={AUTH_GROUP.NAME}
                     options={{animationEnabled: false, header: () => null}}
                     component={AuthStackNavigator}
                 />
                 <Stack.Screen
-                    name="Main"
+                    name={MAIN_GROUP.NAME}
                     component={DrawerNavigator} 
                     options={{animationEnabled: true, header: () => null}}
                 />

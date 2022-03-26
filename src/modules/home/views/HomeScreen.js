@@ -7,7 +7,7 @@ import {
   } from 'native-base';
 import {increment, commonActions} from '~/modules/home/store/Actions';
 import { useDispatch, useSelector } from 'react-redux';
-import { MESSAGE, HELP, LOGIN } from '~/navigations/AppScreens';
+import { MAIN_GROUP, AUTH_GROUP, PUBLIC_GROUP } from '~/navigations/AppScreens';
 
 const HomeScreen = props => {
   const dispatch = useDispatch();
@@ -20,11 +20,11 @@ const HomeScreen = props => {
           <Divider/>
           <Button onPress={()=> dispatch(commonActions.showLoading())}>Show Loading</Button>
           <Divider/>
-          <Button onPress={()=> props.navigation.navigate(MESSAGE.INBOX)}>GoTo Message</Button>
+          <Button onPress={()=> props.navigation.navigate(MAIN_GROUP.SCREENS.MESSAGE.INBOX, { user: 'jane' })}>GoTo Message</Button>
           <Divider/>
-          <Button onPress={()=> props.navigation.navigate('Public', { screen: HELP.INDEX })}>GoTo Help</Button>
+          <Button onPress={()=> props.navigation.navigate(PUBLIC_GROUP.NAME, { screen: PUBLIC_GROUP.SCREENS.HELP , params: { user: 'jane' }})}>GoTo Help</Button>
           <Divider/>
-          <Button onPress={()=> props.navigation.navigate('Auth', { screen: LOGIN })}>Login</Button>
+          <Button onPress={()=> props.navigation.navigate(AUTH_GROUP.NAME, { screen: AUTH_GROUP.SCREENS.LOGIN })}>Login</Button>
       </Box>
   )
 }

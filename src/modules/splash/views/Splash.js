@@ -4,14 +4,14 @@ import {
     Text,
     Button,
   } from 'native-base';
-  import { HOME } from '~/navigations/AppScreens';
+  import { MAIN_GROUP } from '~/navigations/AppScreens';
 
 const SplashScreen = props => {
     const [authLoaded, setAuthLoaded] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
-        setAuthLoaded(true);
+            setAuthLoaded(true);
         }, 1000);
     }, []);
 
@@ -22,7 +22,7 @@ const SplashScreen = props => {
     }, [authLoaded, props.navigation]);
 
     const goToHome = () => {
-        return props.navigation.replace('Main', { screen: 'Home' })
+        return props.navigation.replace(MAIN_GROUP.NAME, { screen: MAIN_GROUP.SCREENS.HOME })
     }
 
     return (

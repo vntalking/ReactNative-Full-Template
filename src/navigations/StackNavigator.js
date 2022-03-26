@@ -15,6 +15,8 @@ import * as MessageModule from '~/modules/Message/Navigations';
 /******* PROFILE MODULE *******/
 import * as ProfileModule from '~/modules/profile/Navigations';
 
+import { PUBLIC_GROUP} from "./AppScreens";
+
 const screenOptionStyle = {
   headerStyle: {
     backgroundColor: "#9AC4F8",
@@ -45,7 +47,6 @@ const ProfileStackNavigator = () => {
 const AuthStackNavigator = () => {
     return (
         <Stack.Navigator screenOptions={screenOptionStyle}>
-            <Stack.Screen name="Splash" component={SplashScreen}/>
             {AuthModule.navigation(Stack)}
         </Stack.Navigator>
     );
@@ -54,10 +55,15 @@ const AuthStackNavigator = () => {
 const PublicStackNavigator  = () => {
     return (
         <Stack.Navigator screenOptions={screenOptionStyle}>
-            <Stack.Screen name="Splash" component={SplashScreen}/>
-            <Stack.Screen name="Help" component={HelpScreen}/>
+            <Stack.Screen name={PUBLIC_GROUP.SCREENS.SPLASH} component={SplashScreen}/>
+            <Stack.Screen name={PUBLIC_GROUP.SCREENS.HELP} component={HelpScreen}/>
         </Stack.Navigator>
     )
 }
 
-export { MainStackNavigator, ProfileStackNavigator, AuthStackNavigator, PublicStackNavigator };
+export { 
+  MainStackNavigator, 
+  ProfileStackNavigator, 
+  AuthStackNavigator, 
+  PublicStackNavigator 
+};

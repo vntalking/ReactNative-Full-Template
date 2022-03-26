@@ -5,8 +5,6 @@ import { useNavigation } from '@react-navigation/native';
 
 import { MainStackNavigator, ProfileStackNavigator} from "./StackNavigator";
 
-import { HOME, ABOUT} from './AppScreens';
-
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigator(props) {
