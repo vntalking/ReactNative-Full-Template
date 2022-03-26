@@ -9,7 +9,7 @@ const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
   return (
-    <Drawer.Navigator defaultStatus='closed'>
+    <Drawer.Navigator defaultStatus='closed' useLegacyImplementation={true}>
       <Drawer.Screen name="Menu Home" component={TabNavigator} />
       <Drawer.Screen name="Menu Setting" component={SettingScreen} />
     </Drawer.Navigator>
