@@ -15,7 +15,13 @@ $ npm install react-native-rename -g
 ```sh
 $ npx react-native-rename "Travel App" -b com.junedomingo.travelapp
 ```
-Với phiên bản mới nhất của react-native-rename bắt dự án phải add git thì bạn có thể tiến hành đổi tên package theo cách thủ công.
+
+Với phiên bản mới nhất của react-native-rename bắt dự án phải add git.
+```git init
+git checkout -b rename-app
+npx react-native-rename "Travel App" -b "com.junedomingo.travelapp"```
+
+Ngoài ra, bạn có thể tiến hành đổi tên package theo cách thủ công.
 https://dev.to/karanpratapsingh/quick-guide-for-updating-package-name-in-react-native-3ei3
 
 ### STEP 2: Cài đặt thư viện
