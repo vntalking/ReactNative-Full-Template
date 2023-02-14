@@ -1,7 +1,7 @@
 # HƯỚNG DẪN SỬ DỤNG
 Dự án xây dựng bộ khung dự án React Native tốt nhất, clean code nhất có thể<br>
-Bộ khung dự án React Native đầy đủ công cụ
-Author: Dương Anh Sơn (VNTALKING.COM)<br>
+Bộ khung dự án React Native đầy đủ công cụ.
+<br>Author: Dương Anh Sơn (VNTALKING.COM)<br>
 Website: [vntalking.com](https://vntalking.com)
 ****************************************************
 ### STEP 1. Đổi tên ứng dụng và package.

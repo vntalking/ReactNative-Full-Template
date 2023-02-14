@@ -5,7 +5,7 @@ import {
     Button,
     Divider
   } from 'native-base';
-import {increment, commonActions} from '~/modules/home/store/Actions';
+import {increment, commonActions} from '~/modules/home/store/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { MAIN_GROUP, AUTH_GROUP, PUBLIC_GROUP } from '~/navigations/AppScreens';
 
