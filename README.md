@@ -19,7 +19,7 @@ $ npx react-native-rename "Travel App" -b com.junedomingo.travelapp
 Với phiên bản mới nhất của react-native-rename bắt dự án phải add git.
 ```git init
 git checkout -b rename-app
-npx react-native-rename "Travel App" -b "com.junedomingo.travelapp"
+npx react-native-rename "Travel App" -b "com.junedomingo.travelapp" --skipGitStatusCheck
 ```
 
 Ngoài ra, bạn có thể tiến hành đổi tên package theo cách thủ công.
