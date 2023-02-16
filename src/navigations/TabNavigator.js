@@ -5,6 +5,8 @@ import { useNavigation } from '@react-navigation/native';
 
 import { MainStackNavigator, ProfileStackNavigator} from "./StackNavigator";
 
+import { Platform } from 'react-native';
+
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigator(props) {
@@ -19,7 +21,7 @@ export default function TabNavigator(props) {
                     tabBarIcon: ({color, size}) => (
                         <Icon name='home' color={color} size={size} />
                     ),
-                    header: () => null,
+                    headerShown: Platform.OS === 'ios'
                     animationEnabled: false
                 }}
                 component={MainStackNavigator}

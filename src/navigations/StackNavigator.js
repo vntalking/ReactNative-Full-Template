@@ -19,12 +19,12 @@ import { PUBLIC_GROUP} from "./AppScreens";
 
 const screenOptionStyle = {
   headerStyle: {
-    backgroundColor: "#9AC4F8",
+    backgroundColor: "#FFFFFF",
   },
-  headerTintColor: "white",
+  headerTintColor: "black",
   headerBackTitle: "Back",
-  animationEnabled: false, 
-  header: () => null
+  animationEnabled: true, 
+  headerShown: true
 };
 
 const MainStackNavigator = () => {
@@ -55,7 +55,7 @@ const AuthStackNavigator = () => {
 const PublicStackNavigator  = () => {
     return (
         <Stack.Navigator screenOptions={screenOptionStyle}>
-            <Stack.Screen name={PUBLIC_GROUP.SCREENS.SPLASH} component={SplashScreen}/>
+            <Stack.Screen name={PUBLIC_GROUP.SCREENS.SPLASH} component={SplashScreen} options={{headerShown: false}}/>
             <Stack.Screen name={PUBLIC_GROUP.SCREENS.HELP} component={HelpScreen}/>
         </Stack.Navigator>
     )

@@ -39,12 +39,12 @@ export default function AppNavigator() {
             <Stack.Navigator initialRouteName="Splash">
                 <Stack.Screen
                     name={PUBLIC_GROUP.NAME}
-                    options={{animationEnabled: false, header: () => null}}
+                    options={{animationEnabled: true, headerShown: false}}
                     component={PublicStackNavigator}
                 />
                 <Stack.Screen
                     name={AUTH_GROUP.NAME}
-                    options={{animationEnabled: false, header: () => null}}
+                    options={{animationEnabled: true, headerShown: false}}
                     component={AuthStackNavigator}
                 />
                 <Stack.Screen
