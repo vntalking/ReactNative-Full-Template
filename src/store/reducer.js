@@ -1,10 +1,12 @@
-import {CommonReducer} from '~/modules/common/store/reducer';
-import {HomeReducer} from '~/modules/home/store/reducer'
+import {AuthReducer} from '~/modules/auth/store/reducer';
+import {HomeReducer} from '~/modules/home/store/reducer';
+import { CommonReducer } from '~/modules/common/store/reducer';
 
 /**
  * Khai báo các sub reducer của các module con trong này
  */
 export default Object.assign({
-    CommonReducer: CommonReducer,
-    HomeReducer: HomeReducer
+    AuthReducer: AuthReducer,
+    HomeReducer: HomeReducer,
+    CommonReducer: CommonReducer
 });

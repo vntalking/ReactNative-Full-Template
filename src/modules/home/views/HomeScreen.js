@@ -11,10 +11,11 @@ import { MAIN_GROUP, AUTH_GROUP, PUBLIC_GROUP } from '~/navigations/AppScreens';
 
 const HomeScreen = props => {
   const dispatch = useDispatch();
-  const HomeReducer = useSelector(state => state.HomeReducer)
+  const HomeReducer = useSelector(state => state.HomeReducer);
 
   return (
-      <Box flex={1} bg="#fff" alignItems="center" justifyContent="center">
+      <>
+        <Box flex={1} bg="#fff" alignItems="center" justifyContent="center">
           <Text>Open up App.js to start working on your app! {HomeReducer.notification}</Text>
           <Button onPress={() => dispatch(increment(1))}>Increase</Button>
           <Divider/>
@@ -25,7 +26,9 @@ const HomeScreen = props => {
           <Button onPress={()=> props.navigation.navigate(PUBLIC_GROUP.NAME, { screen: PUBLIC_GROUP.SCREENS.HELP , params: { user: 'jane' }})}>GoTo Help</Button>
           <Divider/>
           <Button onPress={()=> props.navigation.navigate(AUTH_GROUP.NAME, { screen: AUTH_GROUP.SCREENS.LOGIN })}>Login</Button>
-      </Box>
+        </Box>
+      </>
+      
   )
 }
 export default HomeScreen;

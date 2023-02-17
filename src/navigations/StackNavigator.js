@@ -5,7 +5,7 @@ const Stack = createStackNavigator();
 /******* PUBLIC MODULE *******/
 import SplashScreen from '~/modules/splash/views/Splash';
 import HelpScreen from "~/modules/help/views/HelpScreen";
-import * as AuthModule from '~/modules/common/auth/Navigations';
+import * as AuthModule from '~/modules/auth/Navigations';
 
 
 /******* MAIN MODULE *******/

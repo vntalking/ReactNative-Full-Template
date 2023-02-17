@@ -25,6 +25,7 @@ const Stack = createStackNavigator();
 
 /** DrawerNavigator */
 import DrawerNavigator from './DrawerNavigator';
+import TabNavigator from './TabNavigator';
 
 /**
  * AuthStackNavigator
@@ -49,7 +50,7 @@ export default function AppNavigator() {
                 />
                 <Stack.Screen
                     name={MAIN_GROUP.NAME}
-                    component={DrawerNavigator} 
+                    component={TabNavigator} 
                     options={{animationEnabled: true, header: () => null}}
                 />
             </Stack.Navigator>
