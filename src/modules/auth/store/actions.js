@@ -11,5 +11,19 @@ export const loginAction = (userInfo) => ({
 });
 
 export const logoutAction = () => ({
-  type: ActionTypes.CB_AUTH_LOGOUT,
+  type: ActionTypes.CB_AUTH_LOGOUT
 });
+
+export const updateAuthStateAction = (data) => {
+  return {
+    type: ActionTypes.CB_AUTH_UPDATE_LOGGED_INFO,
+    payload: {data},
+  }
+}
+
+export const getStoreLoginAction = () => {
+  return {
+    type: ActionTypes.CB_AUTH_GET_STORE_LOGIN,
+    payload: {},
+  };
+}

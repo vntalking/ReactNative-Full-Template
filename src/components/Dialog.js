@@ -32,12 +32,12 @@ const Dialog = props => {
       isVisible={isShow} 
       useNativeDriver={true}
       backdropOpacity={0.8}
-      animationIn="zoomInDown"
-      animationOut="zoomOutUp"
-      animationInTiming={600}
-      animationOutTiming={600}
-      backdropTransitionInTiming={600}
-      backdropTransitionOutTiming={600}
+/*       animationIn="zoomInDown"
+      animationOut="zoomOutUp" */
+      animationInTiming={400}
+      animationOutTiming={400}
+      backdropTransitionInTiming={400}
+      backdropTransitionOutTiming={400}
       >
       <View style={styles.container}>
         <View style={styles.content}>
@@ -45,7 +45,7 @@ const Dialog = props => {
             <Icon name='check-circle-o' color="green"  size={50} />
           )}
           {icon == "error" && (
-            <Icon name='times-circle-o' color="#db2777"  size={50} />
+            <Icon name='times-circle-o' color="#f44336"  size={50} />
           )}
           <Text style={styles.title}>{title || "Thông báo"}</Text>
           <Text style={styles.message}>{message || "Không có nội dung"}</Text>
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   message: {
     fontSize: 18,
     marginBottom: 10,
-    color: "#5A5A5A"
+    color: "#2e2e2e"
   },
   button: {
     borderRadius: 20,

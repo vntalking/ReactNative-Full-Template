@@ -11,6 +11,7 @@ import { MAIN_GROUP, AUTH_GROUP, PUBLIC_GROUP } from '~/navigations/AppScreens';
 
 import Dialog from "~/components/Dialog";
 import BottomDialog from '~/components/BottomDialog';
+import BaseLayout from '~/layouts/BaseLayout';
 
 const HomeScreen = props => {
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ const HomeScreen = props => {
   const [isShowDialog, setShowDialog] = useState(false);
 
   return (
-      <>
+      <BaseLayout>
         <Box flex={1} bg="#fff" alignItems="center" justifyContent="center">
           <Text>Open up App.js to start working on your app! {HomeReducer.notification}</Text>
           <Button onPress={() => dispatch(increment(1))}>Increase</Button>
@@ -46,7 +47,7 @@ const HomeScreen = props => {
           onConfirm={() => setShowDialog(false)}
           icon="success"
         /> */}
-      </>
+      </BaseLayout>
       
   )
 }

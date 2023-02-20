@@ -1,17 +1,21 @@
-import React, {useRef, useState, useEffect} from 'react';
-import {View, StyleSheet} from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, StyleSheet } from 'react-native';
 import {
     Text,
-    Button,
-  } from 'native-base';
-  import { MAIN_GROUP } from '~/navigations/AppScreens';
+} from 'native-base';
+import { MAIN_GROUP } from '~/navigations/AppScreens';
+
+import { useDispatch } from 'react-redux';
+import { getStoreLoginAction } from '~/modules/auth/store/actions';
 
 const SplashScreen = props => {
+    const dispatch = useDispatch();
     const [authLoaded, setAuthLoaded] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
-            setAuthLoaded(true);
+            // setAuthLoaded(true);
+            dispatch(getStoreLoginAction());
         }, 1000);
     }, []);
 
