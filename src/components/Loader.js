@@ -22,10 +22,10 @@ const Loader = props => {
             bottom: 0,
             zIndex: 1000,// works on ios
             elevation: 1000, // works on android
-            backgroundColor: "#000000",
+            backgroundColor: "#000000B3",
             flex: 1,
           }}>
-            <StatusBar backgroundColor="#000000" barStyle='dark-content' />
+            <StatusBar backgroundColor="#000000B3" barStyle='light-content' />
             <Spinner
               style={{}}
               isVisible={true}

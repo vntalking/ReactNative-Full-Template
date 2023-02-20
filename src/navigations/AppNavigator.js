@@ -21,7 +21,13 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-const Stack = createStackNavigator();
+import { navigationRef } from '~/navigations/RootNavigation';
+
+import {enableScreens} from 'react-native-screens';
+import {createNativeStackNavigator} from 'react-native-screens/native-stack';
+enableScreens();
+
+const Stack = createNativeStackNavigator();
 
 /** DrawerNavigator */
 import DrawerNavigator from './DrawerNavigator';
@@ -36,8 +42,8 @@ import {PUBLIC_GROUP, AUTH_GROUP, MAIN_GROUP} from '~/navigations/AppScreens'
 
 export default function AppNavigator() {
     return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Splash">
+        <NavigationContainer ref={navigationRef}>
+            <Stack.Navigator initialRouteName="Splash" screenOptions={{headerShown: false}}>
                 <Stack.Screen
                     name={PUBLIC_GROUP.NAME}
                     options={{animationEnabled: true, headerShown: false}}

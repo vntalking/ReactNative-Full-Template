@@ -5,4 +5,5 @@
 /**
  * Hiển thị - tắt một loading toàn màn hình
  */
-export const LOGIN = 'LOGIN';
+export const CB_AUTH_LOGIN        = 'CB_AUTH_LOGIN';
+export const CB_AUTH_LOGOUT       = 'CB_AUTH_LOGOUT';
