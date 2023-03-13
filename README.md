@@ -23,7 +23,7 @@ npx react-native-rename "Travel App" -b "com.junedomingo.travelapp" --skipGitSta
 ```
 
 Ngoài ra, bạn có thể tiến hành đổi tên package theo cách thủ công.
-https://dev.to/karanpratapsingh/quick-guide-for-updating-package-name-in-react-native-3ei3
+https://vntalking.com/react-native-cach-doi-ten-package-name.html
 
 ### STEP 2: Cài đặt thư viện
 ```sh 
